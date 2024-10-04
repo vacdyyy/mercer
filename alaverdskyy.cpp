@@ -399,7 +399,7 @@ int Room::getId()
 }
 
 void menu() {
-	cout << "Äîáðî ïîæàëîâàòü â îòåëü: \n âûáåðèòå äåéñòâèå: \n 1 - äîáàâèòü ãîñòÿ \n 2 - äîáàâëåíèå êîìíàòû" << endl;
+	cout << "Ð”Ð¾Ð±Ñ€Ð¾ Ð¿Ð¾Ð¶Ð°Ð»Ð¾Ð²Ð°Ñ‚ÑŒ Ð² Ð¾Ñ‚ÐµÐ»ÑŒ: \n Ð²Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ðµ: \n 1 - Ð´Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð³Ð¾ÑÑ‚Ñ \n 2 - Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ ÐºÐ¾Ð¼Ð½Ð°Ñ‚Ñ‹" << endl;
 	int choice;
 	cin >> choice;
 	HotelManagment* h1 = new HotelManagment();
@@ -407,11 +407,11 @@ void menu() {
 		string name;
 		int age;
 		string phone;
-		cout << "Ââåäèòå èìÿ ãîñòÿ: " << endl;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð¼Ñ Ð³Ð¾ÑÑ‚Ñ: " << endl;
 		cin >> name;
-		cout << "Ââåäèòå âîçðàñò ãîñòÿ: " << endl;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²Ð¾Ð·Ñ€Ð°ÑÑ‚ Ð³Ð¾ÑÑ‚Ñ: " << endl;
 		cin >> age;
-		cout << "Ââåäèòå íîìåð ãîñòÿ: " << endl;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ Ð³Ð¾ÑÑ‚Ñ: " << endl;
 		cin >> phone;
 		Guest* newGuest = new Guest(name, age, phone);
 		h1->addGuest(newGuest);
@@ -421,13 +421,13 @@ void menu() {
 		string title;
 		int beds;
 		int type;
-		cout << "Âûáåðèòå âèä êîìíàòû: \n 1 - Standart \n 2 - VIP \n 3 - Premium \n 4 - Lux" << endl;
+		cout << "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð²Ð¸Ð´ ÐºÐ¾Ð¼Ð½Ð°Ñ‚Ñ‹: \n 1 - Standart \n 2 - VIP \n 3 - Premium \n 4 - Lux" << endl;
 		cin >> type;
-		cout << "Ââåäèòå íîìåð êîìíàòû: " << endl;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ ÐºÐ¾Ð¼Ð½Ð°Ñ‚Ñ‹: " << endl;
 		cin >> number;
-		cout << "Ââåäèòå íàçâàíèå êîìíàòû: " << endl;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ ÐºÐ¾Ð¼Ð½Ð°Ñ‚Ñ‹: " << endl;
 		cin >> title;
-		cout << "Ââåäèòå êðîâàòè â êîìíàòå: " << endl;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÑ€Ð¾Ð²Ð°Ñ‚Ð¸ Ð² ÐºÐ¾Ð¼Ð½Ð°Ñ‚Ðµ: " << endl;
 		cin >> beds;
 		if (type == 1) {
 			StandartRoom* room1 = new StandartRoom(number, title, beds);
@@ -446,12 +446,12 @@ void menu() {
 			h1->addRoom(room1);
 		}
 		else {
-			cout << "íåïðàâèëüíî âûáðàíî äåéñòâèå" << endl;
+			cout << "Ð½ÐµÐ¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ð¾ Ð²Ñ‹Ð±Ñ€Ð°Ð½Ð¾ Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ðµ" << endl;
 		}
 	}
 
 	else {
-		cout << "íåïðàâèëüíî âûáðàíî äåéñòâèå" << endl;
+		cout << "Ð½ÐµÐ¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ð¾ Ð²Ñ‹Ð±Ñ€Ð°Ð½Ð¾ Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ðµ" << endl;
 	}
 }
 
